@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+    <meta charset="UTF-8">
+   <title> SISTEMAS INFORMATICOS </title> 
+    <style>
+    .centrado {
+      text-align: center;
+    }
+  
+  </style>
+   </head>
+   <body>
+   <h1 class="centrado"> Sistemas informáticos COM-203ES-AVOL1 </h1>
+   <h2 class="centrado"> César Andre Altamirano Fernandez </h2>
+   <h3>Los números del 1 al 10:</h3>
+   <il>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+   </il>
+
+<h3>Fecha y Hora Actual:</h3>
+  <p id="fechaHora"></p>
+  <script>
+    function actualizarFechaHora() {
+      const ahora = new Date();
+      const fecha = ahora.toLocaleDateString();
+      const hora = ahora.toLocaleTimeString();
+      const fechaHora = `${fecha} ${hora}`;
+      document.getElementById("fechaHora").textContent = fechaHora;
+    }
+    actualizarFechaHora(); 
+    setInterval(actualizarFechaHora, 1000); 
+  </script>
+ <style>
+  body {
+    background-color: #fdf6e3; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+   </body>
+</html>
